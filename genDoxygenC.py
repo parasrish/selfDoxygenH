@@ -42,7 +42,7 @@ def handleException(e, mssg) :
 ###############################
 # creates method doxygen header 
 def frameDoxygenHeader(param_count, paramList) :
-	commentStr = "/**\n * @brief \n" 	
+	commentStr = "\n\n/**\n * @brief \n" 	
 	if param_count > 0 :
 		for param in paramList:
 			commentStr = commentStr + " * @param \n"
@@ -132,7 +132,7 @@ def addDoxygenComment(file_name, funcList) :
 #############################################
 argc = len(sys.argv)
 if (argc == 1 or argc >2)  :
-	handleException(EErrors.IncorrectUsage, "genDoxygenC.py <cpp source file>")
+	handleException(EErrors.IncorrectUsage, "genDoxygenC.py <cpp/h source file>")
 else :
 	# Correct Input as per USAGE.
 	fname = sys.argv[1]
