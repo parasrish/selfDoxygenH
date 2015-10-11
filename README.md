@@ -6,7 +6,7 @@ The generated doxygen headers can then be filled with the desired comments.
 ******
 USAGE:
 ******
-Usage : genDoxygenC.py <cpp/h source file>
+Usage : genDoxygenC.py < cpp/h source file >
 
 Example - If "genDoxygenC.py sample_source.h", then sample_source.h.doxygen will be created. When taken diff of the two files, you can well visualize the added headers of doxygen, with placeholders for adding comments.
 
